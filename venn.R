@@ -12,9 +12,7 @@ tit<-args[3] #有无title
 #print(cl)
 #print(tit)
 if(length(args) != 3){
-	print("something is wrong, please cheak!!!")
-	print("USAGE:")
-	print("Rscript venn.R files 1 F")
+	cat("something is wrong, please cheak!!!\nUSAGE:\nRscript venn.R file1,file2,... 1 F\n")
 }else{
 file<-unlist(strsplit(files,split = ","))
 venn<-vector("list")
